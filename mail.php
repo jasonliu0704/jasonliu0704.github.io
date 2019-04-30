@@ -2,7 +2,6 @@
     $to = 'demo@spondonit.com';
     $name = $_POST["name"];
     $email= $_POST["email"];
-    $text= $_POST["msg_subject"];
 
     $fp = fopen("contacts.txt", "a");
 
@@ -11,6 +10,7 @@
     fflush($fp);            // flush output before releasing the lock
         //flock($fp, LOCK_UN);    // release the lock
     //}
+    echo "thanks for your subscription"
 
     fclose($fp);
 
