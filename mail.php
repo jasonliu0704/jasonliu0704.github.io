@@ -6,11 +6,11 @@
 
     $fp = fopen("contacts.txt", "a");
 
-    if (flock($fp, LOCK_EX)) {  // acquire an exclusive lock
-        fwrite($fp, $email." ".$name."\n");
-        fflush($fp);            // flush output before releasing the lock
-        flock($fp, LOCK_UN);    // release the lock
-    }
+    //if (flock($fp, LOCK_EX)) {  // acquire an exclusive lock
+    fwrite($fp, $email." ".$name."\n");
+    fflush($fp);            // flush output before releasing the lock
+        //flock($fp, LOCK_UN);    // release the lock
+    //}
 
     fclose($fp);
 
