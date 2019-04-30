@@ -10,7 +10,7 @@
     fflush($fp);            // flush output before releasing the lock
         //flock($fp, LOCK_UN);    // release the lock
     //}
-    echo "thanks for your subscription"
+    echo "thanks for your subscription";
 
     fclose($fp);
 
